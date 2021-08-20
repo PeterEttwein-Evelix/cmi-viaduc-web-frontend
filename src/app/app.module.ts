@@ -32,7 +32,7 @@ export function preloadServiceFactory(preloadService: PreloadService, ctx: Conte
 		OrdersModule,
 		DeviceDetectorModule.forRoot(),
 		ClientModule.forRoot(),
-		RouterModule.forRoot(ROUTES, {useHash: true}),
+		RouterModule.forRoot(ROUTES, { useHash: true, relativeLinkResolution: 'legacy' }),
 		ToastrModule.forRoot(toastrOptions),
 		MatomoModule,
 		MarkdownModule.forRoot()

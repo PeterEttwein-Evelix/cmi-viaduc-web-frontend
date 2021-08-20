@@ -16,6 +16,8 @@ import {
 } from '@cmi/viaduc-web-core';
 import {SearchFacetteListComponent} from '../../modules/client/components';
 import {SearchService, SeoService, UrlService} from '../../modules/client/services';
+import {HttpEventType} from '@angular/common/http';
+import * as fileSaver from 'file-saver';
 
 @Component({
 	selector: 'cmi-viaduc-search-result-page',
@@ -290,12 +292,55 @@ export class SearchResultPageComponent implements OnInit {
 		}
 
 		let response: SearchResponse | SearchError = await this._searchService.search(request);
-
 		if (this._isErrorResponse(response)) {
 			this._setSearchError(response);
 		} else {
 			this._setSearchResponse(response);
 		}
+	}
+
+	private _searchResultExport(request: SearchRequest) {
+		if (this.loading) {
+			return;
+		}
+		this.loading = true;
+
+		this._preProcessRequest(request);
+		this._delayShowLoading();
+		this._searchService.searchExport(request).subscribe(
+			event => {
+				if (event.type === HttpEventType.Response) {
+					try {
+						let filename =   this._txt.translate('search-result', 'veExportRecord.fileName') + '.xlsx';
+						let contentDisposition: string = event.headers.get('content-disposition');
+						let blob = event.body;
+						if (contentDisposition) {
+							let posFilename	= contentDisposition.indexOf('filename=');
+							let posFilenameStar = contentDisposition.indexOf('filename*=utf-8\'\'');
+							if (posFilenameStar > posFilename) {
+								let filenameStar = contentDisposition.substring(posFilenameStar + ('filename*=utf-8\'\'').length);
+								filename = decodeURI(filenameStar);
+							} else if (posFilename > posFilenameStar && posFilenameStar > -1) {
+								let filenameStar = contentDisposition.substring(posFilenameStar + ('filename*=utf-8\'\'').length, posFilename - 2);
+								filename = decodeURI(filenameStar);
+							} else if (posFilename > -1) {
+								filename = contentDisposition.substring(posFilename + ('filename=').length);
+							}
+						}
+						fileSaver.saveAs(blob, filename);
+						this.loading = false;
+					} catch (ex) {
+						console.error(ex);
+					}
+				}
+			},
+			(error) => {
+				console.log(error);
+				this.loading = false;
+			},
+			() => {
+				this.loading = false;
+			});
 	}
 
 	private _setSearchResponse(response: SearchResponse | SearchError) {
@@ -353,6 +398,10 @@ export class SearchResultPageComponent implements OnInit {
 		if (this.facettenList) {
 			this.facettenList.resetFilters(false);
 		}
+	}
+
+	public async onExportSearch(): Promise<void> {
+		this._searchResultExport(this._context.search.request);
 	}
 
 	public async onFilterRequest(filters: FacetteFilter[]): Promise<void> {
@@ -439,4 +488,5 @@ export class SearchResultPageComponent implements OnInit {
 	public toggleSearchFavoriteMenu(): void {
 		this.showAddSearchFavorite = !this.showAddSearchFavorite;
 	}
+
 }

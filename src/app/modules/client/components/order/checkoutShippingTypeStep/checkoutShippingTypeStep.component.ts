@@ -34,7 +34,7 @@ export class CheckoutShippingTypeStepComponent implements OnInit {
 	@Output()
 	public onNextClicked: EventEmitter<void> = new EventEmitter<void>();
 
-	constructor(private _scs: ShoppingCartService,				
+	constructor(private _scs: ShoppingCartService,
 				private _cfg: ConfigService,
 				private _formBuilder: FormBuilder,
 				private _author: AuthorizationService) {
@@ -47,11 +47,11 @@ export class CheckoutShippingTypeStepComponent implements OnInit {
 		});
 
 		this.liefertypAmtText = this._cfg.getSetting('frontendDynamicTextSettings.deliveryTypeCommission', 'ins <strong>Amt</strong> bestellen (Lieferfrist: ein bis zwei Arbeitstage)');
-	
-		this.liefertypDigitalText = this._cfg.getSetting('frontendDynamicTextSettings.deliveryTypeDigital', 
+
+		this.liefertypDigitalText = this._cfg.getSetting('frontendDynamicTextSettings.deliveryTypeDigital',
 		'<strong>digital</strong> erhalten. Sie erhalten das digitalisierte Dossier in rund 30 Tagen. Alles Weitere zur Digitalisierung finden Sie unter ' +
 		'<a href=\"https://www.recherche.bar.admin.ch/recherche/#/de/informationen/bestellen-und-konsultieren\" target=\"_blank\" rel=\"noopener noreferrer\">Bestellen und Konsultieren</a>.');
-		
+
 		this.liefertypLesesaalText = this._cfg.getSetting('frontendDynamicTextSettings.deliveryTypeReadingRoom',
 		'zur Konsultation in den <strong>Lesesaal</strong> bestellen. Bestellen Sie 24 Stunden im Voraus, ' +
 		'damit Ihnen die Unterlagen am gewünschten Tag zur Verfügung stehen (Dienstag, Mittwoch und Donnerstag).');
@@ -198,7 +198,6 @@ export class CheckoutShippingTypeStepComponent implements OnInit {
 			this.digitalisationItemsToOrder.splice(index, 1);
 		} else {
 			if (this.digitalisationItemsToOrder.length >= this.kontingentResult.bestellkontingent) {
-				console.log('do not check');
 				event.preventDefault();
 				return;
 			}

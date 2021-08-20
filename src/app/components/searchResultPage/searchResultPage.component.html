@@ -10,6 +10,7 @@
 		<div *ngIf="!facetteCollapsed" class="row result-content-expanded">
 			<cmi-viaduc-facette-list #facetteList
 									  (onFilter)="onFilterRequest($event)"
+									  (onShowAllFilter)="onShowAllFilterRequest()"
 									  *ngIf="searchResponse?.facets && !hasAnyErrors"
 									  [facetts]="searchResponse.facets"
 									  [(collapsed)]="facetteCollapsed"
@@ -75,6 +76,14 @@
 							</form>
 						</div>
 						<div class="col-md-2 col-xs-3 no-bottom-margin hitbar-icon-col">
+							<a  (keydown.enter)="toggleSearchFavoriteMenu()"
+							   (click)="onExportSearch()"
+								[tooltip]="'XLS-Datei herunterladen' | translate:'hitbar.export'"
+							   [tooltipPlacement]="'left'"
+							   tabindex="0">
+								<span class="icon icon--excel" aria-hidden="true"></span>
+								<span class="sr-only">{{ 'Treffer als XLS-Datei herunterladen' | translate:'hitbar.export' }}</span>
+							</a>
 							<a [tooltip]="'Permalink dieser Suche in die Zwischenablage kopieren' | translate:'hitbar.copyPermalink'"
 							   [tooltipPlacement]="'left'"
 							   tabindex="0"

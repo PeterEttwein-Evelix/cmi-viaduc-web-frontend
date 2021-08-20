@@ -17,10 +17,10 @@
     "schliessen": "Chiudi",
     "und": "e"
   },
-	"engagementbubbles": {
-		"chat": "Chat",
-		"chatbot": "Chatbot"
-	},
+  "engagementbubbles": {
+    "chat": "Chat",
+    "chatbot": "Chatbot"
+  },
   "account": {
     "backToPage": "Torna alla pagina iniziale",
     "birthday": "Data di nascita",
@@ -124,7 +124,8 @@
     "title": "Il mio conto utente"
   },
   "accountFavoritesDetailPageComponent": {
-    "pageTitle": "Elenco dei preferiti"
+    "pageTitle": "Elenco dei preferiti",
+    "fileName": "freferiti_"
   },
   "accountFavoritesListPageComponent": {
     "pageTitle": "Elenco dei preferiti"
@@ -152,8 +153,8 @@
     "treeNode": {
       "collapse": "Riduci",
       "expand": "Espandi",
-			"onlyVisibleForIdentifiedUsers": "I dossier sono visibili soltanto agli utenti autorizzati."
-		},
+      "onlyVisibleForIdentifiedUsers": "I dossier sono visibili soltanto agli utenti autorizzati."
+    },
     "zeigen": "Mostra nel piano d'archivio",
     "zuFavoritenHinzufuegen": "Aggiungi ai preferiti",
     "lokalisieren": "Localizza nel piano d'archivio"
@@ -265,7 +266,7 @@
     "notFoundMessageNotOe1": "Forse non disponi dell'autorizzazione necessaria per visualizzare la pagina. Verifica i tuoi diritti nel <a href=\"#{0}\">conto utente</a>.</br></br>",
     "notFoundMessageOe1": "Forse non disponi delle autorizzazioni necessarie per visualizzare la pagina (v. <a href=\"#{0}\">Registrazione e identificazione</a>).</br></br>"
   },
-	"detailPage": {
+  "detailPage": {
     "information": "Informazione"
   },
   "detailHierarchy": {
@@ -294,7 +295,7 @@
     "downloadSuccess": "L'avvio del download è riuscito.",
     "downloadSuccessTitle": "Il download riuscito",
     "estimatedPrepTime": "La preparazione dura ca.",
-		"preparationInfo": "Tempo di preparazione previsto: {0}.",
+    "preparationInfo": "Tempo di preparazione previsto: {0}.",
     "pleaseLogin": "Effettua l'accesso per poter ordinare i documenti",
     "pleaseLoginDetailsAt": "Dettagli sotto",
     "preparationPending": "Riceverai una mail quando la preparazione sarà conclusa. Puoi chiudere la pagina.",
@@ -304,7 +305,7 @@
     "registerAndIdentify": "Registrazione e identificazione",
     "unknown": "sconosciuto",
     "xSecondsOverdue": "più del previsto",
-		"downloadNow": "Scarica i documenti. Nel file index.html trovi l’elenco dei documenti."
+    "downloadNow": "Scarica i documenti. Nel file index.html trovi l’elenco dei documenti."
   },
   "einsichtCheckoutOrderDetailsStep": {
     "artDerArbeit": "Genere di lavoro",
@@ -328,7 +329,7 @@
   },
   "engagement": {
     "chatbotInfo": "Passa al tedesco per utilizzare il chatbot (beta).",
-    "chatInfo": "Puoi chattare con l'Archivio federale dal martedì al giovedì, dalle 9 alle 12 e dalle 13 alle 15 - saremo lieti di poterti aiutare.",
+    "chatInfo": "Puoi chattare con l'Archivio federale dal martedì al giovedì, dalle 9 alle 12 e dalle 13 alle 16 - saremo lieti di poterti aiutare.",
     "headerTitle": "Come possiamo aiutarti?"
   },
   "enums": {
@@ -501,17 +502,18 @@
     "delete": "Cancella",
     "nameOfNewList": "Nome del nuovo elenco",
     "rename": "Rinomina",
+    "export": "Esportazione",
     "save": "Salva"
   },
-	"fileSize": {
-		"kB": "KB",
-		"MB": "MB",
-		"GB": "GB",
-		"TB": "TB",
-		"PB": "PB",
-		"ZB": "ZB",
-		"YB": "YB"
-	},
+  "fileSize": {
+    "kB": "KB",
+    "MB": "MB",
+    "GB": "GB",
+    "TB": "TB",
+    "PB": "PB",
+    "ZB": "ZB",
+    "YB": "YB"
+  },
   "file": {
     "acceptTermsWarning": "Leggi e accetta le condizioni di utilizzazione.",
     "alert": "Attenzione:",
@@ -519,7 +521,7 @@
     "availabilityCheckTitle": "La verifica della disponibilità del documento digitalizzato è in corso...",
     "cancel": "Interrompi",
     "download": "Download",
-		"downloadNow": "Effettua ora il download",
+    "downloadNow": "Effettua ora il download",
     "downloadError": "Si è verificato un errore durante l'avvio del download. L'errore è: ",
     "downloadErrorDefaultMessage": "Si è verificato un errore imprevisto. Riprova più tardi.",
     "downloadErrorTitle": "Errore durante il download",
@@ -531,7 +533,7 @@
     "missingTermsOfUse": "Leggi e accetta le condizioni di utilizzazione.",
     "notAuthorized": "Non disponi dei diritti necessari per consultare o ordinare i documenti digitali di questa unità di descrizione.",
     "order": "Ordina",
-		"chooseDownloadReason": "Seleziona una motivazione per effettuare il download.",
+    "chooseDownloadReason": "Seleziona una motivazione per effettuare il download.",
     "personData": "Sì, questo documento digitalizzato contiene dati personali:",
     "pleaseLogin": "Accedi al tuo conto per usufruire di funzioni supplementari quali la gestione dei preferiti e l'ordinazione.",
     "preparationInfo": "È stato dato l'ordine per la preparazione di: {0}",
@@ -598,16 +600,17 @@
     "title": "Accesso on-line all'Archivio federale",
     "zumBestellkorb": "Vai al carrello con {0} posizioni",
     "einstellungen": "Impostazioni",
-		"favoritesCount": "Preferiti ({0})"
+    "favoritesCount": "Preferiti ({0})"
   },
   "headerContent": {
     "component": {
       "aktiv": "Attivo",
-			"toolTippLoggedIn": "Trovi ulteriori informazioni sul tuo stato utente alla pagina “Registrazione e identificazione” o al menu «Informazioni».",
-			"toolTippLoggedInAsRegisteredUser": "In qualità di utente registrato hai accesso ai dati liberamente accessibili dell’Archivio federale. Se desideri consultare dati protetti devi prima procedere all’identificazione (vedi \"Il mio conto utente\")."
+      "toolTippLoggedIn": "Trovi ulteriori informazioni sul tuo stato utente alla pagina “Registrazione e identificazione” o al menu «Informazioni».",
+      "toolTippLoggedInAsRegisteredUser": "In qualità di utente registrato hai accesso ai dati liberamente accessibili dell’Archivio federale. Se desideri consultare dati protetti devi prima procedere all’identificazione (vedi \"Il mio conto utente\")."
     }
   },
   "hitbar": {
+    "export": "Scarica i risultati come file XLS",
     "copyPermalink": "Copia il permalink di questa ricerca negli appunti",
     "groupByArchivplan": "Raggruppa secondo il piano d'archivio",
     "orderableUnits": "Unità ordinabili",
@@ -704,7 +707,7 @@
       "referenceCode": "Segnatura",
       "title": "Titolo",
       "withinInfo": "Contiene"
-		},
+    },
     "sortFields": {
       "creationPeriod": {
         "startDate": {
@@ -765,7 +768,7 @@
       "chat": "Chat",
       "chatbot": "Chatbot",
       "chatbotTeaserText": "Chiedi al chatbot (beta) a disposizione 24 ore su 24.",
-      "chatTeaserText": "Puoi chattare con l'Archivio federale dal martedì al giovedì, dalle 9 alle 12 e dalle 13 alle 15 - saremo lieti di poterti aiutare.",
+      "chatTeaserText": "Puoi chattare con l'Archivio federale dal martedì al giovedì, dalle 9 alle 12 e dalle 13 alle 16 - saremo lieti di poterti aiutare.",
       "email": "E-mail",
       "emailTeaserText": "Per richieste più complesse mandaci una mail.",
       "forum": "Forum",
@@ -814,8 +817,8 @@
   },
   "orderCheckoutPage": {
     "bestellbestaetigung": "Conferma dell'ordinazione",
-    "chooseShippingType": "Seleziona la modalità di consegna",    
-    "finishOrder": "Concludi l'ordinazione",    
+    "chooseShippingType": "Seleziona la modalità di consegna",
+    "finishOrder": "Concludi l'ordinazione",
     "inMyName": "Per me",
     "inTheNameOfAnother": "Per conto di un altro utente",
     "iWantThisDossierOrdered": "Desidero ordinare questo dossier",
@@ -829,18 +832,18 @@
     "reasons": "Motivo",
     "title": "Ordinazione",
     "userSelect": "Seleziona utente",
-		"warningInfo": "Diffida",
-		"warningTitle": "Tempi d’attesa più lunghi per la digitalizzazione!",
-		"warningMessagePart1": "La grande richiesta sta mettendo a dura prova la nostra infrastruttura di digitalizzazione. Non possiamo pertanto escludere tempi di attesa più lunghi per l’evasione del Suo mandato. Se avesse bisogno rapidamente dei documenti o il loro quantitativo fosse importante, Le consigliamo di ordinarli per la consultazione nelle sale di lettura.",
-		"warningMessagePart2": "I dipendenti dell’Amministrazione federale possono farsi inviare i documenti prodotti dalla propria unità amministrativa direttamente in ufficio.",
-		"digitalisierungNichtMoeglichTitle": "Contingente esaurito",
-		"digitalisierungNichtMoeglichIntro": "abbiamo ricevuto il Suo mandato di digitalizzazione per {0} dossier.",
-		"digitalisierungNichtMoeglichAsBvw": "La invitiamo a ordinare i documenti per consultazione nelle sale di lettura o nella Sua unità amministrativa, oppure ad attendere il completamento dei precedenti mandati di digitalizzazione.",
-		"digitalisierungNichtMoeglichOthers": "La invitiamo a ordinare i documenti per consultazione nelle sale di lettura o ad attendere il completamento dei precedenti mandati di digitalizzazione.",
-		"exceedDigitalisierungTitle": "Contingente quasi esaurito: possono essere digitalizzati ancora soltanto {0} dossier",
-		"exceedDigitalisierungIntro": "tra i dossier che figurano nel mandato di digitalizzazione, La invitiamo a selezionare quelli che hanno la priorità. Non appena saranno stati digitalizzati, potrà inviare un nuovo mandato.",
-		"exceedDigitalisierungAsBvw": "In alternativa può ordinare i documenti per consultazione nelle sale di lettura o nella Sua unità amministrativa.",
-		"exceedDigitalisierungOthers": "In alternativa può ordinare i documenti per consultazione nelle sale di lettura."
+    "warningInfo": "Diffida",
+    "warningTitle": "Tempi d’attesa più lunghi per la digitalizzazione!",
+    "warningMessagePart1": "La grande richiesta sta mettendo a dura prova la nostra infrastruttura di digitalizzazione. Non possiamo pertanto escludere tempi di attesa più lunghi per l’evasione del Suo mandato. Se avesse bisogno rapidamente dei documenti o il loro quantitativo fosse importante, Le consigliamo di ordinarli per la consultazione nelle sale di lettura.",
+    "warningMessagePart2": "I dipendenti dell’Amministrazione federale possono farsi inviare i documenti prodotti dalla propria unità amministrativa direttamente in ufficio.",
+    "digitalisierungNichtMoeglichTitle": "Contingente esaurito",
+    "digitalisierungNichtMoeglichIntro": "abbiamo ricevuto il Suo mandato di digitalizzazione per {0} dossier.",
+    "digitalisierungNichtMoeglichAsBvw": "La invitiamo a ordinare i documenti per consultazione nelle sale di lettura o nella Sua unità amministrativa, oppure ad attendere il completamento dei precedenti mandati di digitalizzazione.",
+    "digitalisierungNichtMoeglichOthers": "La invitiamo a ordinare i documenti per consultazione nelle sale di lettura o ad attendere il completamento dei precedenti mandati di digitalizzazione.",
+    "exceedDigitalisierungTitle": "Contingente quasi esaurito: possono essere digitalizzati ancora soltanto {0} dossier",
+    "exceedDigitalisierungIntro": "tra i dossier che figurano nel mandato di digitalizzazione, La invitiamo a selezionare quelli che hanno la priorità. Non appena saranno stati digitalizzati, potrà inviare un nuovo mandato.",
+    "exceedDigitalisierungAsBvw": "In alternativa può ordinare i documenti per consultazione nelle sale di lettura o nella Sua unità amministrativa.",
+    "exceedDigitalisierungOthers": "In alternativa può ordinare i documenti per consultazione nelle sale di lettura."
   },
   "orderCheckoutPageComponent": {
     "pageTitle": "Ordinazione"
@@ -858,7 +861,7 @@
   },
   "orderOverviewPage": {
     "closeModal": "Chiudi",
-		"itemsCount": "Numero: {0}",
+    "itemsCount": "Numero: {0}",
     "columnItems": {
       "abbruchgrundDisplay": "Motivo dell'interruzione",
       "artDerArbeitDisplay": "Genere di lavoro",
@@ -987,7 +990,8 @@
       "bis": "fino a",
       "ja": "Sì",
       "nein": "No",
-      "resultateOhneZeitraum": "Risultati senza periodo"
+      "resultateOhneZeitraum": "Risultati senza periodo",
+      "weitereLaden": "Ulteriore carico"
     },
     "fieldoperator": {
       "and": "Tutti i termini",
@@ -1179,7 +1183,7 @@
     "infoSymbol": "Simbolo dell'informazione"
   },
   "user": {
-		"cancelRegistrationMessage": "Si prega di completare la registrazione e salvare i dati.",
+    "cancelRegistrationMessage": "Si prega di completare la registrazione e salvare i dati.",
     "birthday": "Data di nascita",
     "countryCode": "Paese",
     "emailAddress": "E-mail",
@@ -1223,7 +1227,18 @@
     "saveSuccess": "Dati utente salvati",
     "saveSuccessTitle": "Salvataggio riuscito"
   },
-	"orderSection": {
-		"orderText": "Aggiungi i documenti al carrello. Da qui potrai ordinarli direttamente o presentare una domanda di consultazione."
-	}
+  "orderSection": {
+    "orderText": "Aggiungi i documenti al carrello. Da qui potrai ordinarli direttamente o presentare una domanda di consultazione."
+  },
+  "veExportRecord": {
+    "referenceCode": "Segnatura",
+    "fileReference": "Riferimento",
+    "title": "Titolo",
+    "creationPeriod": "Periodo di costituzione",
+    "withinInfo": "Contiene",
+    "level": "Livello",
+    "accessibility": "Accessibilità secondo la LAr",
+    "fileName": "risultato-di-una-ricerca",
+    "favourites": "freferiti"
+  }
 }

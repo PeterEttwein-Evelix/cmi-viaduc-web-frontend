@@ -46,18 +46,9 @@ export class UserService {
 
 		this._isLoadingUserSettings = true;
 
-		console.log('userService: now getting userSettings from API');
-
 		this.getUserSettings().then((settings) => {
 			if (settings) {
-				console.log('userService: got user settings from api: ');
-				console.log(settings);
-
-				console.log('userService: now save settings');
 				this._cfg.setSetting('user.settings', settings);
-				console.log('userService: saved Settings are:');
-				console.log(this._cfg.getSetting('user.settings'));
-
 				this._userSettingsLoaded = true;
 				this._isLoadingUserSettings = false;
 				this.userSettingsLoaded.next(true);
@@ -70,7 +61,6 @@ export class UserService {
 
 	public async updateUserSettings(settings: any): Promise<void> {
 		const url = this._createUrl('UpdateUserSettings');
-		console.log('POST: ' + url + '. ' + settings);
 		await this._http.post<string>(url, settings, this._http.noCaching).toPromise();
 	}
 

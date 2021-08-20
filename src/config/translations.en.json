@@ -17,10 +17,10 @@
     "schliessen": "Close",
     "und": "and"
   },
-	"engagementbubbles": {
-		"chat": "Chat",
-		"chatbot": "Chatbot"
-	},
+  "engagementbubbles": {
+    "chat": "Chat",
+    "chatbot": "Chatbot"
+  },
   "account": {
     "backToPage": "Back to start page",
     "birthday": "Date of birth",
@@ -124,7 +124,8 @@
     "title": "My user account"
   },
   "accountFavoritesDetailPageComponent": {
-    "pageTitle": "Favourites list"
+    "pageTitle": "Favourites list",
+    "fileName": "favourites_"
   },
   "accountFavoritesListPageComponent": {
     "pageTitle": "Favourites list"
@@ -152,8 +153,8 @@
     "treeNode": {
       "collapse": "Collapse",
       "expand": "Expand",
-			"onlyVisibleForIdentifiedUsers": "Dossiers are only visible to authorised users."
-		},
+      "onlyVisibleForIdentifiedUsers": "Dossiers are only visible to authorised users."
+    },
     "zeigen": "Show in archive plan",
     "zuFavoritenHinzufuegen": "Add to favourites",
     "lokalisieren": "Localise in archive plan"
@@ -265,7 +266,7 @@
     "notFoundMessageNotOe1": "It is possible that you do not have the necessary rights to access the page. Please check your rights in your <a href=\"#{0}\">user account</a>.</br></br>",
     "notFoundMessageOe1": "It is possible that you do not have the necessary rights to access the page (see <a href=\"#{0}\">Login and identification</a>).</br></br>"
   },
-	"detailPage": {
+  "detailPage": {
     "information": "Information"
   },
   "detailHierarchy": {
@@ -294,7 +295,7 @@
     "downloadSuccess": "Download successfully initiated.",
     "downloadSuccessTitle": "Download successful",
     "estimatedPrepTime": "Preparation will take approx.",
-		"preparationInfo": "Expected preparation time: {0}.",
+    "preparationInfo": "Expected preparation time: {0}.",
     "pleaseLogin": "Please log in to order the documents",
     "pleaseLoginDetailsAt": "Details under",
     "preparationPending": "You will receive an e-mail when preparation is complete. You can now close the page.",
@@ -304,7 +305,7 @@
     "registerAndIdentify": "Registration and identification",
     "unknown": "unknown",
     "xSecondsOverdue": "overdue",
-		"downloadNow": "Download the documents now. In the index.html file you will find an overview of all the documents."
+    "downloadNow": "Download the documents now. In the index.html file you will find an overview of all the documents."
   },
   "einsichtCheckoutOrderDetailsStep": {
     "artDerArbeit": "Nature of work",
@@ -328,7 +329,7 @@
   },
   "engagement": {
     "chatbotInfo": "To use the chatbot (beta) switch to German",
-    "chatInfo": "Chat with the Federal Archives Tuesdays to Thursdays from 9 a.m. to 12 midday and 1 p.m. to 3 p.m. – we’ll be happy to help.",
+    "chatInfo": "Chat with the Federal Archives Tuesdays to Thursdays from 9 a.m. to 12 midday and 1 p.m. to 4 p.m. – we’ll be happy to help.",
     "headerTitle": "How may we assist you?"
   },
   "enums": {
@@ -501,17 +502,18 @@
     "delete": "Delete",
     "nameOfNewList": "New name for list",
     "rename": "Rename",
+    "export": "Export",
     "save": "Save"
   },
-	"fileSize": {
-		"kB": "KB",
-		"MB": "MB",
-		"GB": "GB",
-		"TB": "TB",
-		"PB": "PB",
-		"ZB": "ZB",
-		"YB": "YB"
-	},
+  "fileSize": {
+    "kB": "KB",
+    "MB": "MB",
+    "GB": "GB",
+    "TB": "TB",
+    "PB": "PB",
+    "ZB": "ZB",
+    "YB": "YB"
+  },
   "file": {
     "acceptTermsWarning": "Please read and accept the conditions of use.",
     "alert": "Please note:",
@@ -519,7 +521,7 @@
     "availabilityCheckTitle": "Checking availability of digitised material...",
     "cancel": "Cancel",
     "download": "Download",
-		"downloadNow": "Download now",
+    "downloadNow": "Download now",
     "downloadError": "An error occurred when initiating the download. The error is: ",
     "downloadErrorDefaultMessage": "An unexpected error has occurred. Please try again later.",
     "downloadErrorTitle": "Download error",
@@ -531,7 +533,7 @@
     "missingTermsOfUse": "Please read and accept the conditions of use.",
     "notAuthorized": "You do not have sufficient rights to view or order digital documents from this unit of description.",
     "order": "Order",
-		"chooseDownloadReason": "Please select a reason for downloading.",
+    "chooseDownloadReason": "Please select a reason for downloading.",
     "personData": "Yes, this digitised material contains personal data:",
     "pleaseLogin": "Log in to use additional functions such as managing favourites and placing orders.",
     "preparationInfo": "Submitted for preparation: {0}",
@@ -598,16 +600,17 @@
     "title": "Online access to the Federal Archives",
     "zumBestellkorb": "Navigate to shopping cart with {0} items",
     "einstellungen": "Settings",
-		"favoritesCount": "Favourites ({0})"
+    "favoritesCount": "Favourites ({0})"
   },
   "headerContent": {
     "component": {
       "aktiv": "Active",
-			"toolTippLoggedIn": "For more information about your user status consult the page “Registration & identification” and the menu “Information”.",
-			"toolTippLoggedInAsRegisteredUser": "As a registered user you have access to publicly accessible data in the Federal Archives. If you wish to consult data within a closure period you must identify yourself first (see \"My user account\")."
+      "toolTippLoggedIn": "For more information about your user status consult the page “Registration & identification” and the menu “Information”.",
+      "toolTippLoggedInAsRegisteredUser": "As a registered user you have access to publicly accessible data in the Federal Archives. If you wish to consult data within a closure period you must identify yourself first (see \"My user account\")."
     }
   },
   "hitbar": {
+    "export": "Download hits as XLS file",
     "copyPermalink": "Copy permalink to this search to the clipboard",
     "groupByArchivplan": "Group by archive plan",
     "orderableUnits": "Units available for order",
@@ -704,7 +707,7 @@
       "referenceCode": "Reference code",
       "title": "Title",
       "withinInfo": "In which"
-		},
+    },
     "sortFields": {
       "creationPeriod": {
         "startDate": {
@@ -765,7 +768,7 @@
       "chat": "Chat",
       "chatbot": "Chatbot",
       "chatbotTeaserText": "Ask the chatbot (beta) – it is available around the clock.",
-      "chatTeaserText": "Chat with the Federal Archives Tuesdays to Thursdays from 9 a.m. to 12 midday and 1 p.m. to 3 p.m. – we’ll be happy to help.",
+      "chatTeaserText": "Chat with the Federal Archives Tuesdays to Thursdays from 9 a.m. to 12 midday and 1 p.m. to 4 p.m. – we’ll be happy to help.",
       "email": "E-mail",
       "emailTeaserText": "For more complex enquiries, send us an e-mail.",
       "forum": "Forum",
@@ -814,8 +817,8 @@
   },
   "orderCheckoutPage": {
     "bestellbestaetigung": "Order confirmation",
-    "chooseShippingType": "Select form of delivery",    
-    "finishOrder": "Complete order",    
+    "chooseShippingType": "Select form of delivery",
+    "finishOrder": "Complete order",
     "inMyName": "In my own name",
     "inTheNameOfAnother": "On behalf of another user",
     "iWantThisDossierOrdered": "I would like to order this dossier",
@@ -829,18 +832,18 @@
     "reasons": "Reason",
     "title": "Order",
     "userSelect": "User selection",
-		"warningInfo": "Warning",
-		"warningTitle": "Lengthy waiting times for digitised documents!",
-		"warningMessagePart1": "Owing to high demand, the digitisation infrastructure is currently under heavy load. You should therefore expect longer processing times for your order. If you wish to view the documents urgently or submit a large order, please order the dossiers for consultation in the reading room.",
-		"warningMessagePart2": "Federal Administration staff can order documents submitted by their administrative unit for delivery direct to the office.",
-		"digitalisierungNichtMoeglichTitle": "You have exhausted your quota",
-		"digitalisierungNichtMoeglichIntro": "You have already requested us to digitise {0} dossiers.",
-		"digitalisierungNichtMoeglichAsBvw": "Please order the documents for consultation in the reading room or delivery to the office, or wait until your existing digitisation orders have been completed.",
-		"digitalisierungNichtMoeglichOthers": "Please order the documents for consultation in the reading room or wait until your existing digitisation orders have been completed.",
-		"exceedDigitalisierungTitle": "You can only have {0} more dossiers digitised",
-		"exceedDigitalisierungIntro": "Please select below the dossiers you wish to have digitised now. As soon as they have been digitised, you can order further dossiers.",
-		"exceedDigitalisierungAsBvw": "Alternatively you can order them for consultation in the reading room or delivery to the office at any time.",
-		"exceedDigitalisierungOthers": "Alternatively you can order them for consultation in the reading room at any time."
+    "warningInfo": "Warning",
+    "warningTitle": "Lengthy waiting times for digitised documents!",
+    "warningMessagePart1": "Owing to high demand, the digitisation infrastructure is currently under heavy load. You should therefore expect longer processing times for your order. If you wish to view the documents urgently or submit a large order, please order the dossiers for consultation in the reading room.",
+    "warningMessagePart2": "Federal Administration staff can order documents submitted by their administrative unit for delivery direct to the office.",
+    "digitalisierungNichtMoeglichTitle": "You have exhausted your quota",
+    "digitalisierungNichtMoeglichIntro": "You have already requested us to digitise {0} dossiers.",
+    "digitalisierungNichtMoeglichAsBvw": "Please order the documents for consultation in the reading room or delivery to the office, or wait until your existing digitisation orders have been completed.",
+    "digitalisierungNichtMoeglichOthers": "Please order the documents for consultation in the reading room or wait until your existing digitisation orders have been completed.",
+    "exceedDigitalisierungTitle": "You can only have {0} more dossiers digitised",
+    "exceedDigitalisierungIntro": "Please select below the dossiers you wish to have digitised now. As soon as they have been digitised, you can order further dossiers.",
+    "exceedDigitalisierungAsBvw": "Alternatively you can order them for consultation in the reading room or delivery to the office at any time.",
+    "exceedDigitalisierungOthers": "Alternatively you can order them for consultation in the reading room at any time."
   },
   "orderCheckoutPageComponent": {
     "pageTitle": "Order"
@@ -858,7 +861,7 @@
   },
   "orderOverviewPage": {
     "closeModal": "Close",
-		"itemsCount": "Number: {0}",
+    "itemsCount": "Number: {0}",
     "columnItems": {
       "abbruchgrundDisplay": "Reason for cancellation",
       "artDerArbeitDisplay": "Nature of work",
@@ -987,7 +990,8 @@
       "bis": "to",
       "ja": "Yes",
       "nein": "No",
-      "resultateOhneZeitraum": "Results without time period"
+      "resultateOhneZeitraum": "Results without time period",
+      "weitereLaden": "Load more"
     },
     "fieldoperator": {
       "and": "All of the terms",
@@ -1179,7 +1183,7 @@
     "infoSymbol": "Info symbol"
   },
   "user": {
-		"cancelRegistrationMessage": "Please complete the registration and save the data.",
+    "cancelRegistrationMessage": "Please complete the registration and save the data.",
     "birthday": "Date of birth",
     "countryCode": "Country",
     "emailAddress": "E-mail",
@@ -1223,7 +1227,18 @@
     "saveSuccess": "Your user data were successfully saved",
     "saveSuccessTitle": "Data successfully saved"
   },
-	"orderSection": {
-		"orderText": "Add documents to your shopping cart. There you can order them directly or you can submit a consultation request."
-	}
+  "orderSection": {
+    "orderText": "Add documents to your shopping cart. There you can order them directly or you can submit a consultation request."
+  },
+  "veExportRecord": {
+    "referenceCode": "Reference code",
+    "fileReference": "File reference",
+    "title": "Title",
+    "creationPeriod": "Creation period",
+    "withinInfo": "In which",
+    "level": "Level",
+    "accessibility": "Accessibility under ArchA",
+    "fileName": "search-result",
+    "favourites": "favourites"
+  }
 }

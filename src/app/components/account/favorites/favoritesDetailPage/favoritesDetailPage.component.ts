@@ -4,6 +4,8 @@ import {TranslationService} from '@cmi/viaduc-web-core';
 import {FavoriteList} from '../../../../modules/client/model';
 import {FavoriteListsComponent} from '../../../../modules/client/components';
 import {FavoriteService, SeoService, UrlService} from '../../../../modules/client/services';
+import * as fileSaver from 'file-saver';
+import { HttpEventType } from '@angular/common/http';
 
 @Component({
 	selector: 'cmi-viaduc-account-favorites-detail-page',
@@ -116,5 +118,30 @@ export class AccountFavoritesDetailPageComponent implements OnInit {
 		}, (e) => {
 			this.error = e;
 		});
+	}
+
+	public exportList(): void {
+		this._favoriteService.exportFavoriteList(this.list.id).subscribe(
+			event => {
+				if (event.type === HttpEventType.Response) {
+					try {
+						let filename =  this._txt.translate('Favoritenliste', 'accountFavoritesDetailPageComponent.fileName') +  this.list.name  + '.xlsx';
+						let blob = event.body;
+						this.loading = false;
+						fileSaver.saveAs(blob, filename);
+
+					} catch (ex) {
+						console.error(ex);
+						this.error = ex;
+					}
+				}
+			},
+			(e) => {
+				this.loading = false;
+				this.error = e;
+			},
+			() => {
+				this.loading = false;
+			});
 	}
 }
